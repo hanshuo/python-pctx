@@ -1,0 +1,25 @@
+This is a Python wrapper for the Endurance PCTx driver (in C++) for Linux,
+which is originally written by Wade Smith. The files have been slightly
+modified to ensure compatibility with Python. An original copy of the C++
+driver is available at:
+    
+    https://launchpad.net/pctxdriver
+    http://www.endurance-rc.com/software.php#clinux
+  
+
+====== Required Packages ======
+
+  - SWIG (tested under 1.3)
+  - libusb-1.0 (normally comes with most Linux distributions)
+  
+
+====== Installation ======
+
+To install, simple type:
+
+  $ make
+
+To run the test programs:
+  
+  $ ./pctx_test (in C/C++)
+  $ python pctx_test.py (in Python)
