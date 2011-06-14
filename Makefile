@@ -5,7 +5,7 @@ CFLAGS=-Wall -O2 -DLINUX
 BIN=pctx_test
 PYTHON_DIR=/usr/include/python2.6
 
-all:	$(BIN) python-pctx
+all:	$(BIN)
 
 clean:
 	@echo "Cleaning up directory."

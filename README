@@ -17,9 +17,30 @@ driver is available at:
 
 To install, simple type:
 
-  $ make
+  $ python setup.py install
 
 To run the test programs:
-  
+
+  $ make (this for C/C++ only)
   $ ./pctx_test (in C/C++)
   $ python pctx_test.py (in Python)
+
+
+====== Set permissions to PCTx automatically ======
+
+Normally, the PCTx is only writable with root privilege, which is not
+convenient to use. One quick fix is to run the following every time the
+PCTx is plugged in:
+
+  $ chmod 777 /dev/bus/usb/00?/00?
+
+You will need to replace the above with the correct bus and device ID,
+which can be found by running "lsusb".
+
+Another more efficient way is to set up a udev rule. You can simply copy
+"pctx.rules" that comes with the driver to the udev rule directory, and
+then reload the rules:
+ 
+  $ cp pctx.rules /etc/udev/rules.d/
+  $ udevadm control --reload-rules
+ 
