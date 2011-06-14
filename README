@@ -15,7 +15,7 @@ driver is available at:
 
 ====== Installation ======
 
-To install, simple type:
+To install:
 
   $ python setup.py install
 
@@ -37,7 +37,7 @@ PCTx is plugged in:
 You will need to replace the above with the correct bus and device ID,
 which can be found by running "lsusb".
 
-Another more efficient way is to set up a udev rule. You can simply copy
+Another more efficient way is to set up a udev rule. You can copy
 "pctx.rules" that comes with the driver to the udev rule directory, and
 then reload the rules:
  
