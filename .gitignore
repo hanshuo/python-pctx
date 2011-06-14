@@ -1,2 +1,6 @@
 pctx.py
+pctx.pyc
 pctx_wrap.*
+build/
+dist/
+python_pctx.egg-info/

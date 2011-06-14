@@ -10,8 +10,12 @@ driver is available at:
 ====== Required Packages ======
 
   - SWIG (tested under 1.3)
-  - libusb-1.0 (normally comes with most Linux distributions)
-  
+  - libusb-1.0-dev
+  - Python setuptools
+
+Under Ubuntu Linux 10.04 LTS (Lucid), they can be obtained by:
+    
+  $ apt-get install swig libusb-1.0-0-dev python-setuptools
 
 ====== Installation ======
 
